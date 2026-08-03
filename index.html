@@ -506,35 +506,68 @@ img{
 ====================================================*/
 @media (max-width:768px){
 
-.hero{
-    width:100%;
-    aspect-ratio:2/1;   /* Same ratio as desktop */
-    height:auto;
-    overflow:hidden;
-}
+    .hero{
+        width:100%;
+        aspect-ratio:2/1;
+        height:auto;
+        overflow:hidden;
+    }
 
-.hero-images{
-    display:flex;
-    width:100%;
-    height:100%;
-}
+    .hero-images{
+        display:flex;
+        width:100%;
+        height:100%;
+    }
 
-.panel{
-    height:100%;
-}
+    .panel{
+        height:100%;
+    }
 
-.title-box{
-    width:70%;
-    top:60%;
-}
+    /* ---------- TITLE ---------- */
 
-.title-box h1 span{
-    font-size:42px !important;
-}
+    .title-box{
+        position:absolute;
+        left:50%;
+        top:50%;                 /* Was 60% */
+        transform:translate(-50%,-50%);
+        width:75%;
+        z-index:100;
+    }
 
-.corner{
-    transform:scale(.65);
-}
+    .title-box h1 span{
+        font-size:40px !important;
+        letter-spacing:1px;
+        text-shadow:4px 4px 0 rgba(0,0,0,.28);
+    }
+
+    /* ---------- CORNERS ---------- */
+
+    .corner{
+        display:block;
+        width:45px;
+        height:45px;
+        border-width:6px;
+    }
+
+    .top-left{
+        left:-20px;
+        top:-20px;
+    }
+
+    .top-right{
+        right:-20px;
+        top:-20px;
+    }
+
+    .bottom-left{
+        left:-20px;
+        bottom:-20px;
+    }
+
+    .bottom-right{
+        right:-20px;
+        bottom:-20px;
+    }
 }
 
 
