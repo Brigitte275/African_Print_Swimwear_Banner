@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>African Print Swimwear Banner</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <!-- Your stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="hero">
+
+    <!-- ==========================
+         IMAGE PANELS
+    =========================== -->
+
+    <div class="hero-images">
+
+        <!-- LEFT MODEL -->
+        <div class="panel panel1">
+            <img src="model1.jpg" alt="African Print Swimwear Model 1">
+        </div>
+
+        <!-- BLUE SWIMSUIT -->
+        <div class="panel panel2">
+            <img src="model4.jpg" alt="African Print Swimwear Model 4">
+        </div>
+
+        <!-- DASHIKI SWIMSUIT -->
+        <div class="panel panel3">
+            <img src="model3.jpg" alt="African Print Swimwear Model 3">
+        </div>
+
+        <!-- KENTE BIKINI -->
+        <div class="panel panel4">
+            <img src="model2.jpg" alt="African Print Swimwear Model 2">
+        </div>
+
+    </div>
+
+
+    <!-- ==========================
+         TITLE
+    =========================== -->
+
+    <div class="title-box">
+
+        <!-- Corner Brackets -->
+        <span class="corner top-left"></span>
+        <span class="corner top-right"></span>
+        <span class="corner bottom-left"></span>
+        <span class="corner bottom-right"></span>
+
+        <h1>
+            <span>AFRICAN</span>
+            <span>PRINT</span>
+            <span>SWIMWEAR</span>
+        </h1>
+
+    </div>
+
+</section>
+<style>
+  /*====================================================
+    RESET
+====================================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,
+body{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    background:#ffffff;
+    font-family:Arial,sans-serif;
+}
+
+/*====================================================
+    HERO
+====================================================*/
+
+.hero{
+    position:relative;
+    width:100%;
+    height:100vh;
+    min-height:850px;
+    overflow:hidden;
+    background:#fff;
+}
+
+/*====================================================
+    IMAGE CONTAINER
+====================================================*/
+
+.hero-images{
+    position:absolute;
+    inset:0;
+
+    display:flex;
+    align-items:stretch;
+
+    width:100%;
+    height:100%;
+}
+
+/*====================================================
+    PANELS
+====================================================*/
+
+.panel{
+    position:relative;
+    overflow:hidden;
+    height:100%;
+
+    margin-left:-40px;   /* overlap panels */
+}
+
+/*====================================================
+    PANEL WIDTHS
+====================================================*/
+
+.panel1{
+    flex:1.18;
+    z-index:1;
+    clip-path:polygon(
+        0 0,
+        92% 0,
+        80% 100%,
+        0 100%
+    );
+}
+
+.panel2{
+    flex:1.02;
+    z-index:2;
+    clip-path:polygon(
+        12% 0,
+        100% 0,
+        88% 100%,
+        0 100%
+    );
+}
+
+.panel3{
+    flex:1.00;
+    z-index:3;
+    clip-path:polygon(
+        12% 0,
+        100% 0,
+        88% 100%,
+        0 100%
+    );
+}
+
+.panel4{
+    flex:.92;
+    z-index:4;
+    clip-path:polygon(
+        12% 0,
+        100% 0,
+        100% 100%,
+        0 100%
+    );
+}
+
+/*====================================================
+    IMAGES
+====================================================*/
+
+.panel img{
+
+    position:absolute;
+
+    top:0;
+    left:50%;
+
+    width:100;
+    height:100%;
+
+    min-width:100%;
+
+    object-fit:cover;
+
+    transform:translateX(-50%);
+
+    user-select:none;
+    pointer-events:none;
+}
+
+/*====================================================
+    INDIVIDUAL IMAGE POSITIONING
+====================================================*/
+
+/* LEFT MODEL */
+
+.panel1 img{
+ object-position:48% top;
+}
+
+/* BLUE SWIMSUIT */
+
+.panel2 img{
+ object-position:center top;
+}
+
+/* DASHIKI SWIMSUIT */
+
+.panel3 img{
+ object-position:48% top;
+}
+
+/* KENTE BIKINI */
+
+.panel4 img{
+
+    height:105%;
+    left:52%;
+    top:0%;
+}
+/*====================================================
+    TITLE CONTAINER
+====================================================*/
+
+.title-box{
+ position:absolute;
+    top:56%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:900px;
+    text-align:center;
+    z-index:100;
+}
+
+/*====================================================
+    TITLE
+====================================================*/
+
+.title-box h1{
+display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    font-family:'Anton', sans-serif;
+    font-style:italic;
+    text-transform:uppercase;
+
+    line-height:0.90;   /* was 0.80 */
+}
+
+/*====================================================
+    INDIVIDUAL WORDS
+====================================================*/
+
+.title-box h1 span{
+ display:block;
+
+    color:#92ff77;
+
+    font-size:105px;
+
+    letter-spacing:2px;
+
+    text-shadow:5px 5px 0 rgba(0,0,0,.20);
+}
+
+/* AFRICAN */
+
+.title-box h1 span:nth-child(1){
+
+    font-size:125px;
+   margin-top:6px;
+}
+
+/* PRINT */
+
+.title-box h1 span:nth-child(2){
+
+    font-size:125px;
+margin-top:6px;
+}
+
+/* SWIMWEAR */
+
+.title-box h1 span:nth-child(3){
+
+    font-size:125px;
+margin-top:6px;
+}
+
+/*====================================================
+    CORNERS
+====================================================*/
+
+.corner{
+
+    position:absolute;
+    width:70px;
+    height:70px;
+    border:8px solid #0b7a42;
+}
+
+/* TOP LEFT */
+
+.top-left{
+left:-55px;
+    top:-5px;
+    border-right:none;
+    border-bottom:none;
+}
+
+/* TOP RIGHT */
+
+.top-right{
+  right:-55px;
+    top:-5px;
+    border-left:none;
+    border-bottom:none;
+}
+/* BOTTOM LEFT */
+
+.bottom-left{
+  left:-55px;
+    bottom:-5px;
+    border-right:none;
+    border-top:none;
+}
+
+/* BOTTOM RIGHT */
+
+.bottom-right{
+ right:-55px;
+    bottom:-5px;
+    border-left:none;
+    border-top:none;
+}
+
+/*====================================================
+    LAYERING
+====================================================*/
+
+.hero-images{
+
+    z-index:1;
+
+}
+
+.title-box{
+
+    z-index:50;
+
+}
+
+/*====================================================
+    SMOOTH RENDERING
+====================================================*/
+
+img{
+
+    -webkit-user-drag:none;
+    user-select:none;
+
+}
+
+.hero,
+.panel,
+.panel img{
+
+    backface-visibility:hidden;
+    -webkit-backface-visibility:hidden;
+
+    transform-style:preserve-3d;
+
+}
+
+/*====================================================
+    OPTIONAL HOVER
+====================================================*/
+
+.panel img{
+
+    transition:transform .5s ease;
+
+}
+
+.panel:hover img{
+
+    transform:translateX(-50%) scale(1.03);
+
+}
+/*====================================================
+    LARGE LAPTOPS
+====================================================*/
+
+@media (max-width:1600px){
+
+    .hero{
+        min-height:760px;
+    }
+
+    .title-box{
+        width:680px;
+    }
+
+    .title-box h1 span{
+        font-size:95px !important;
+    }
+
+    .corner{
+        width:65px;
+        height:65px;
+    }
+
+}
+
+
+/*====================================================
+    LAPTOPS
+====================================================*/
+
+@media (max-width:1366px){
+
+    .hero{
+        min-height:680px;
+    }
+
+    .title-box{
+        width:620px;
+        top:58%;
+    }
+
+    .title-box h1 span{
+        font-size:82px !important;
+    }
+
+    .corner{
+        width:60px;
+        height:60px;
+        border-width:7px;
+    }
+
+}
+
+
+/*====================================================
+    TABLETS
+====================================================*/
+
+@media (max-width:992px){
+
+    .hero{
+
+        height:auto;
+        min-height:1100px;
+
+    }
+
+    .hero-images{
+
+        display:grid;
+
+        grid-template-columns:1fr 1fr;
+
+        grid-template-rows:500px 500px;
+
+    }
+
+    .panel{
+
+        clip-path:none !important;
+
+        height:500px;
+
+    }
+
+    .panel img{
+
+        position:absolute;
+
+        top:0;
+        left:50%;
+
+        width:110%;
+        height:100%;
+
+        object-fit:cover;
+
+        transform:translateX(-50%);
+
+    }
+
+    .title-box{
+
+        width:90%;
+
+        top:50%;
+
+    }
+
+    .title-box h1 span{
+
+        font-size:72px !important;
+
+        text-shadow:
+        5px 5px 0 rgba(0,0,0,.25);
+
+    }
+
+    .corner{
+
+        width:50px;
+
+        height:50px;
+
+        border-width:6px;
+
+    }
+
+}
+
+
+/*====================================================
+    MOBILE
+====================================================*/
+
+@media (max-width:768px){
+
+    .hero{
+
+        min-height:auto;
+
+    }
+
+    .hero-images{
+
+        grid-template-columns:1fr;
+
+        grid-template-rows:repeat(4,350px);
+
+    }
+
+    .panel{
+
+        height:350px;
+
+    }
+
+    .panel img{
+
+        width:100%;
+
+        height:100%;
+
+        object-fit:cover;
+
+        left:50%;
+
+        transform:translateX(-50%);
+
+    }
+
+    .title-box{
+
+        top:50%;
+
+        width:95%;
+
+    }
+
+    .title-box h1 span{
+
+        font-size:48px !important;
+
+        letter-spacing:2px;
+
+        line-height:.9;
+
+        text-shadow:
+        3px 3px 0 rgba(0,0,0,.25);
+
+    }
+
+    .corner{
+
+        display:none;
+
+    }
+
+}
+
+
+/*====================================================
+    SMALL MOBILE
+====================================================*/
+
+@media (max-width:480px){
+
+    .hero-images{
+
+        grid-template-rows:repeat(4,280px);
+
+    }
+
+    .panel{
+
+        height:280px;
+
+    }
+
+    .title-box h1 span{
+
+        font-size:34px !important;
+
+    }
+
+}
+</style>
+</body>
+</html>
