@@ -504,68 +504,37 @@ img{
 /*====================================================
     MOBILE
 ====================================================*/
-
 @media (max-width:768px){
 
 .hero{
-    height:100vh;
-    min-height:700px;
+    width:100%;
+    aspect-ratio:2/1;   /* Same ratio as desktop */
+    height:auto;
+    overflow:hidden;
 }
 
 .hero-images{
-
-    display:grid;
-
-    grid-template-columns:1fr 1fr;
-    grid-template-rows:1fr 1fr;
-
+    display:flex;
     width:100%;
     height:100%;
 }
 
 .panel{
-
     height:100%;
-    clip-path:none !important;
-
-}
-
-.panel img{
-
-    position:absolute;
-    inset:0;
-
-    width:100%;
-    height:100%;
-
-    object-fit:cover;
-    object-position:center top;
-
-    transform:none;
 }
 
 .title-box{
-
-    width:90%;
-
-    left:50%;
-    top:50%;
-
-    transform:translate(-50%,-50%);
+    width:70%;
+    top:60%;
 }
 
 .title-box h1 span{
-
     font-size:42px !important;
-
 }
 
 .corner{
-
-    display:none;
-
+    transform:scale(.65);
 }
-
 }
 
 
